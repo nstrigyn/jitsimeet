@@ -194,7 +194,7 @@ const App = () => {
                 JitsiMeeting Demo App
             </h1>
             <JitsiMeeting
-                domain='jitsimeet.onrender.com'
+                domain='meet.ffmuc.net'
                 roomName = { generateRoomName() }
                 spinner = { renderSpinner }
                 // configOverwrite = {{
