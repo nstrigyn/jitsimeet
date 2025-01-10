@@ -76,7 +76,7 @@ const App = () => {
         alert('Ready to close...');
     };
 
-    const generateRoomName = () => `JitsiMeetRoomNo${Math.random() * 100}-${Date.now()}`;
+    const generateRoomName = () => `room1`;
 
     // Multiple instances demo
     const renderNewInstance = () => {
@@ -194,13 +194,13 @@ const App = () => {
                 JitsiMeeting Demo App
             </h1>
             <JitsiMeeting
-                domain='meet.ffmuc.net'
+                domain='jitsimeet.onrender.com'
                 roomName = { generateRoomName() }
                 spinner = { renderSpinner }
-                configOverwrite = {{
-                    subject: 'lalalala',
-                    hideConferenceSubject: false
-                }}
+                // configOverwrite = {{
+                //     subject: 'lalalala',
+                //     hideConferenceSubject: false
+                // }}
                 lang = 'en-us'
                 onApiReady = { externalApi => handleApiReady(externalApi) }
                 onReadyToClose = { handleReadyToClose }
@@ -216,9 +216,9 @@ const App = () => {
 
                 useStaging = { true }
                 getIFrameRef = { handleJaaSIFrameRef } /> */}
-            {renderButtons()}
+            {/* {renderButtons()}
             {renderNewInstance()}
-            {renderLog()}
+            {renderLog()} */}
         </>
     );
 };
